@@ -1,23 +1,49 @@
-# QuTech Challenges @ MIT iQuHACK 2022
+# enQrypt
+![alt text](https://github.com/Mannendri/MIT-iQuHACK-2022-enQrypt/blob/master/static/images/black_whistle.png?raw=true)
 
-<p align="left">
-  <a href="https://qutech.nl" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151484481-7cedb7da-603e-43cc-890c-979fb66aeb60.png" width="25%" style="padding-right: 0%"/></a>
-  <a href="https://iquhack.mit.edu/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151647370-d161d5b5-119c-4db9-898e-cfb1745a8310.png" width="10%" style="padding-left: 0%"/> </a>
-</p>
+## **[MIT iQuHACK 2022](https://www.iquise.mit.edu/iQuHACK/2022-01-28) | QuTech Quantum Key Distribution Challenge**
 
+**Description:**
+For this challenge you will be tasked with creating an interface and method to use quantum key distribution to send an encrypted message between the members of your team.	
 
-## Description 
+**Background:**
+As you might know, one of the major potential threats of a quantum computer is the ability to run an algorithm called Shor’s algorithm, which can efficiently do prime factorization. Because almost all contemporary encryption schemes rely on prime factorization, this could lead to large data security issues. Beyond just breaking current encryption, quantum computers also enable new methods of encryption that do not rely on prime factorization. One of these methods, Quantum Key distribution, lies at the heart of this challenge.		
 
-For the 2022 edition of the iQuHack (interdisciplinary Quantum HACKathon), [QuTech](https://qutech.nl) has partnered with the team at MIT to propose 2 challenges, hosted in our own multi-hardware Quantum Technology platform, [Quantum Inspire](https://www.quantum-inspire.com). These aim to draw participants to the challenges at the heart of our mission: to develop scalable prototypes of a quantum computer and an inherently safe quantum internet, based on the fundamental laws of quantum mechanics.
+**Challenge goal:**
+The goal is to create an interface and method that allows two users to create a shared key through the use of a quantum computer. These quantum computers are accessible online through the quantum inspire framework, which can be programmed through using the languages cQASM or OpenQASM (e.g. with Qiskit). 
 
-To qualify for the QuTech Division Challenge, participants should submit a project that addresses either the proposed Quantum Error Correction (QEC) challenge or the Quantum Key Distribution (QKD) challenge. Detailed descriptions of these two challenges and their goals are available in the documents linked below (hosted in this repository):
+## **Project Outline**
 
-- [Quantum Error Correction Challenge](https://github.com/iQuHACK/2022_qutech_challenge/blob/main/QuantumErrorCorrectionChallenge.pdf)
-- [Quantum Key Distribution Challenge](https://github.com/iQuHACK/2022_qutech_challenge/blob/main/QuantumKeyDistrubutionChallenge.pdf)
+**Team Members:** [Mannendri Olivares](https://www.linkedin.com/in/mannendri), [Michael Tesfaye](https://www.linkedin.com/in/michael-tesfaye-645387205/), [Brios Olivares](https://www.linkedin.com/in/brios-olivares/), [Juan Alvarez](https://www.linkedin.com/in/juan-alvarez-2263b5212/)
 
+**Problem Definition:** 
 
-## Scoring and Submission
+Whistleblowing is the practice of an employee “blowing the whistle” to reveal illicit company or government practices. Companies and government can often intercept this communication by using algorithms (e.g. Shor's algorithm) to compromise standard encryption schemes and eavesdrop. This can lead to workplace or government retaliation which ultimately harms the whistleblower.
 
-**Rubric:** https://docs.google.com/document/u/1/d/e/2PACX-1vR5PVoInN_Fi42lIOchhblgGBPblgNyouj1XHukonZ4sdqY-p5ulS9TxdzvddEcDNFc5k_6teFyKzXv/pub
+**Solution:** 
 
-**Submission:** Please visit https://iquhack.mit.edu/ for details on how to submit your project.
+enQrypt allows whistleblowers to report illicit practices with total privacy and no fear of retaliation.
+
+**Goal:** 
+
+To create a Flask-based web application that allows two users to communicate with each other by sending text messages which are encrypted using Quantum Key Distribution (with the BB84 protocol) implemented on a Quantum Inspire quantum computer.
+
+**Tech Stack:**
+
+- [Python](https://www.python.org/)
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://www.javascript.com/)
+- [Qiskit](https://qiskit.org/)
+- [Quantum Inspire](https://www.quantum-inspire.com/)
+
+## **Links**
+
+- [Website](https://MIT-iQuHACK-2022.mannendri.repl.co)
+- [Website Wireframe](https://whimsical.com/mit-iquhack-2022-VG14X1qUurpvyLrCLvEKht)
+- [Slide Presentation](https://docs.google.com/presentation/d/1W6uq_kOijuIeqa3I77lJ9mviHtBdrN1arL-Nl21E6r0/edit?usp=sharing)
+- [Project Documentation](https://docs.google.com/document/d/1fKMb8rYdemfV7gmypooQgqEIo53iYm1EoGtfiSoEzss/edit?usp=sharing)
+
+## **Our Experience**
+
+The hackathon went well for us. We were able to code a quantum protocol, set up a basic website, and have basic chat functionality. We encountered some problems and were able to overcome most of them. We learned a lot about quantum cryptography and how to implement it. We also learned a lot about website development and how to integrate markup languages such as HTML with Python. We enjoyed the challenge and had a lot of fun coding all the steps of our project.
+
